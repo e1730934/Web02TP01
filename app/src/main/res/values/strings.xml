@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TP01</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
