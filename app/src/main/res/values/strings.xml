@@ -6,4 +6,8 @@
     <string name="password">Password:</string>
     <string name="login">Login</string>
     <string name="sign_up">Sign Up</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_your_password_again">Enter your password again</string>
 </resources>
