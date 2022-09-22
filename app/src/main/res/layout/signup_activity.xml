@@ -60,7 +60,7 @@
             app:layout_constraintTop_toTopOf="@+id/inputFirstName"
             app:layout_constraintBottom_toBottomOf="@+id/inputFirstName"
             app:layout_constraintStart_toEndOf="@+id/inputFirstName" app:layout_constraintHorizontal_bias="0.594"
-            app:layout_constraintVertical_bias="0.0"/>
+            app:layout_constraintVertical_bias="1.0"/>
     <EditText
             android:layout_width="100dp"
             android:layout_height="57dp"
@@ -69,7 +69,7 @@
             android:ems="10"
             android:id="@+id/inputFirstName"
             android:autofillHints="" app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.266"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.302"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@+id/lblSignUP"
             app:layout_constraintVertical_bias="0.071"/>
     <TextView
