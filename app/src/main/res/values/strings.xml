@@ -10,4 +10,10 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="enter_your_password_again">Enter your password again</string>
+    <string name="d_connexion">Déconnexion</string>
+    <string name="connexion">Connexion</string>
+    <string name="modifier_le_profile">Modifier le profile</string>
+    <string name="supprimer_le_profile">Supprimer le profile</string>
+    <string name="dumy_logo_image">Dumy logo image</string>
+    <string name="inscription">Inscription</string>
 </resources>
