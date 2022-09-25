@@ -23,7 +23,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity"
-        android:exported="false"/>
+                  android:exported="false"/>
+        <activity android:name=".InscriptionActivity"
+                  android:exported="false"/>
     </application>
 
 </manifest>
