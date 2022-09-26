@@ -12,7 +12,7 @@ class LoginActivity: AppCompatActivity() {
 
         val btnInscription = findViewById<Button>(R.id.btnSignUpInLoginPage)
         btnInscription.setOnClickListener {
-            val intent = Intent(this, InscriptionActivity::class.java)
+            val intent = Intent(this, InscriptionDansBD::class.java)
             startActivity(intent)
         }
     }

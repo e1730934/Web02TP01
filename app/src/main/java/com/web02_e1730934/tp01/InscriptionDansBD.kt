@@ -10,7 +10,7 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.web02_e1730934.tp01.models.User
 
-class InscriptionActivity : AppCompatActivity() {
+class InscriptionDansBD : AppCompatActivity() {
     private lateinit var database: DatabaseReference
 
 
@@ -29,7 +29,7 @@ class InscriptionActivity : AppCompatActivity() {
             val passwordConfirm = findViewById<EditText>(R.id.inputPasswordTwo).text.toString()
 
             if (password == passwordConfirm) {
-                val user = User(firstName, lastName, email, password, phoneNumber)
+                val user = User(firstName, lastName, phoneNumber, email, password)
                 val uniqueId = database.push().key
                 if (uniqueId != null) {
                     database.child("users").child(uniqueId).setValue(user)
