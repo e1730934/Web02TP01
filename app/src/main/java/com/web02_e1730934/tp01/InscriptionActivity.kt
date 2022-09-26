@@ -10,7 +10,7 @@ import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.web02_e1730934.tp01.models.User
 
-class InscriptionActivity: AppCompatActivity() {
+class InscriptionActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
 
 
@@ -20,7 +20,6 @@ class InscriptionActivity: AppCompatActivity() {
         database = Firebase.database.reference
 
         val btnSignUp = findViewById<Button>(R.id.btnSignUpAction)
-
         btnSignUp.setOnClickListener {
             val firstName = findViewById<EditText>(R.id.inputFirstName).text.toString()
             val lastName = findViewById<EditText>(R.id.inputLastName).text.toString()
@@ -29,14 +28,16 @@ class InscriptionActivity: AppCompatActivity() {
             val password = findViewById<EditText>(R.id.inputPasswordOne).text.toString()
             val passwordConfirm = findViewById<EditText>(R.id.inputPasswordTwo).text.toString()
 
-           if (password == passwordConfirm) {
-                val user = User(firstName, lastName, email, phoneNumber, password)
-               user.email?.let { it1 -> database.child("users").child(it1).setValue(user) }
+            if (password == passwordConfirm) {
+                val user = User(firstName, lastName, email, password, phoneNumber)
+                val uniqueId = database.push().key
+                if (uniqueId != null) {
+                    database.child("users").child(uniqueId).setValue(user)
+                }
                 val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             }
         }
-
 
 
     }
